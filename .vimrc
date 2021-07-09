@@ -1,6 +1,5 @@
 set relativenumber
 syntax on
-set wrap
 set backspace=indent,eol,start
 
 call plug#begin('~/.vim/plugged')
@@ -11,8 +10,6 @@ Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'vim-airline/vim-airline'
 call plug#end()
-
-call plug#end
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
